@@ -62,7 +62,7 @@ btnHOLD.addEventListener('click', function () {
 		let turnStr = "score" + activePlayer;
 		document.getElementById(turnStr).textContent = finalScore[activePlayer];
 		let winnerSTR = ".player--" + activePlayer;
-		if (finalScore[activePlayer] >= 20) {
+		if (finalScore[activePlayer] >= 100) {
 			document.querySelector(winnerSTR).classList.add('player--winner');
 			playing = false;
 			diceroll.classList.add('hidden');
