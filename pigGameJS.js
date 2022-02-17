@@ -32,7 +32,7 @@ btnROLL.addEventListener('click', function () {
 		const randomnum = Math.trunc(Math.random() * 6) + 1;
 		console.log(randomnum);
 		diceroll.classList.remove('hidden');
-		const address = "dice-" + String(randomnum) + ".png";
+		const address = "pictures/dice-" + String(randomnum) + ".png";
 		diceroll.src = address;
 		if (randomnum != 1) {
 			let string = turn + activePlayer;
